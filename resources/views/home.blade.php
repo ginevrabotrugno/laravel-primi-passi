@@ -7,6 +7,6 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <h1>LARAVEL PRIMI PASSI</h1>
+    <h1> {{ $title }} </h1>
 </body>
 </html>
