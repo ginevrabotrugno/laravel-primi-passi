@@ -8,7 +8,15 @@
 </head>
 <body>
 
-    <h1> {{ $title }} </h1>
+    <header>
+        <h1> {{ $title }} </h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
     @if (count($fruits) > 0)
 
