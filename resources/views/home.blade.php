@@ -9,11 +9,20 @@
 <body>
     <h1> {{ $title }} </h1>
 
-    <h3>Frutta:</h3>
-    <ul>
-        @foreach ($fruits as $fruit)
-            <li> {{ $fruit }} </li>
-        @endforeach
-    </ul>
+    @if (count($fruits) > 0)
+
+        <h3>Frutta:</h3>
+        <ul>
+            @foreach ($fruits as $fruit)
+                <li> {{ $fruit }} </li>
+            @endforeach
+        </ul>
+
+    @else
+
+        <h3>Non ci sono Frutti</h3>
+
+    @endif
+
 </body>
 </html>
