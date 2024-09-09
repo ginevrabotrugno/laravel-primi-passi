@@ -24,5 +24,15 @@
 
     @endif
 
+    <h3>User</h3>
+    <p>
+        <strong>Nome: </strong> {{ $user['name'] }} <br>
+        <strong> Cognome: </strong> {{ $user['surname'] }} <br>
+        <strong> E-mail: </strong> {{ $user['email'] }} <br>
+        <strong> Età: </strong> {{ $user['age'] }} <br>
+        <strong> Città: </strong> {{ $user['city'] }}
+    </p>
+
+
 </body>
 </html>

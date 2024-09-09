@@ -16,8 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'Laravel Primi Passi';
 
-    // $fruits = ['mela', 'arancia', 'uva', 'fragola'];
-    $fruits = [];
+    $fruits = ['mela', 'arancia', 'uva', 'fragola'];
+    // $fruits = [];
 
-    return view('home', compact('title', 'fruits'));
+    $user = [
+        'name' => 'Luca',
+        'surname' => 'Rossi',
+        'email' => 'lica@rossi.it',
+        'age' => 28,
+        'city' => 'Roma',
+    ];
+
+    return view('home', compact('title', 'fruits', 'user'));
 });
