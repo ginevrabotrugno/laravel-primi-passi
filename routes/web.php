@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'Laravel Primi Passi';
 
-    return view('home', compact('title'));
+    $fruits = ['mela', 'arancia', 'uva', 'fragola'];
+
+    return view('home', compact('title', 'fruits'));
 });

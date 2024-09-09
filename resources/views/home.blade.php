@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1> {{ $title }} </h1>
+
+    <h3>Frutta:</h3>
+    <ul>
+        @foreach ($fruits as $fruit)
+            <li> {{ $fruit }} </li>
+        @endforeach
+    </ul>
 </body>
 </html>
