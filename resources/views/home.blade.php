@@ -11,8 +11,8 @@
         <h1> {{ $title }} </h1>
         <nav>
             <ul>
-                <li><a href="{{ url('/about') }}">About</a></li>
-                <li><a href="{{ url('/contact') }}">Contact</a></li>
+                <li><a href="{{ route('about') }}">About</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </nav>
     </header>

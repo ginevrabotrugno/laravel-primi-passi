@@ -28,7 +28,7 @@ Route::get('/', function () {
     ];
 
     return view('home', compact('title', 'fruits', 'user'));
-});
+})->name('home');
 
 Route::get('/about', function () {
 
@@ -46,7 +46,7 @@ Route::get('/about', function () {
     ];
 
     return view('about', compact('title', 'fruits', 'user'));
-});
+})->name('about');
 
 Route::get('/contact', function () {
 
@@ -64,4 +64,4 @@ Route::get('/contact', function () {
     ];
 
     return view('contact', compact('title', 'fruits', 'user'));
-});
+})->name('contact');
